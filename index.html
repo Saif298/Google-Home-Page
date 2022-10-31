@@ -1,0 +1,176 @@
+<head>
+    <style>
+        body{
+            margin:0; padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor:url(cursor.png),auto;
+        }
+        img{
+            width:30px;
+        }
+        section{
+            position:relative;
+            width:100%;          
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+        section header{
+            position:absolute;
+            top:0;
+            width:100%;
+            display:flex;
+            justify-content:flex-end;
+            padding:20px;
+        }
+        section header ul{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        section header ul li{
+            list-style:none;
+            margin-left:20px;
+        }
+        section header ul li a{
+            color:#111;
+            text-decoration:none;
+            font-size:13px;
+        }
+        section header ul li button{
+            background:#4584ef;
+            border:none;
+            outline:none;
+            padding:8px 14px;
+            color:#fff;
+            font-size:14px;
+            border-radius:4px;
+            cursor:pointer;
+        }
+        section .main{
+            width: 580px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+       
+        section .main .srcbx{
+            position:relative;
+            width:100%;
+            margin-top:20px;
+        }
+        section .main .srcbx .src{
+            width:100%;
+            padding:13px;
+            padding-left:45px;
+            padding-right:60px;
+            border-radius:30px;
+            border:1px solid #ccc;
+            outline:none;
+            font-size:16px;
+        }
+        section .main .srcbx .icon .icn-img{
+            width:16px;
+        }
+        section .main .srcbx .icon{
+            position:absolute; top:0;
+            width:90%;
+            display:flex;
+            padding:14px 20px;
+            justify-content:space-between;
+            align-items:center;
+            pointer-events:none;
+        }
+        section .main .btn{
+            margin-top:20px;
+        }
+        section .main .btn button{
+            margin:1 5px;
+            padding:12px 20px;
+            color:#555;
+            font-size:16px;
+            border:none;
+            cursor:pointer;
+            border-radius:1px solid transparent;
+            outline:none;
+        }
+        section .main .btn button:hover{
+            border:1px solid #ccc;
+            margin:0 4px;
+            padding:11px 20px;
+        }
+        section .main .lang{
+            margin-top:20px;
+        }
+        section .footer{
+            position:absolute;
+            bottom:0;left:0;
+            width:100%;
+            background-color:#f2f2f2;
+        }
+        section .footer .row{
+            display:flex;
+            justify-content:space-between;
+            border-top:1px solid rgb(0,0,0,0.05) ;
+        }
+        section .footer .row ul{
+            display:flex;
+        }
+        section .footer .row ul li{
+            list-style:none;
+            margin-right:25px;
+        }
+        section .footer .row ul li a{
+            text-decoration:none;
+            font-size:14px;
+            color:#5f6368;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="g icn.png"></a></li>
+                <li><button>Log In</button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="google1.webp" alt="google" style="width:300px">
+            <div class="srcbx">
+                <input type="text" class="src">
+                <div class="icon">
+                    <div><img src="C:\Users\My PC\html projects\search.png" alt="search" class="icn-img"></div>
+                    <div><img src="C:\Users\My PC\html projects\g mic.png" alt="mic" class="icn-img"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Google Search</button>
+                <button>I'm Feelling Lucky</button>
+            </div>
+            <div class="lang">
+                Google offered in <a href="#">বাংলা</a>
+            </div>
+        </div>       
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
